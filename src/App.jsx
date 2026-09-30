@@ -10,7 +10,7 @@ import { FaReact, FaNodeJs, FaNpm, FaHeart, FaStar, FaRocket } from 'react-icons
 // EXERCÍCIO 2 - react-confetti
 // TODO: Descomente a linha abaixo após instalar
 // ============================================
-// import Confetti from 'react-confetti'
+import Confetti from 'react-confetti'
 
 // ============================================
 // EXERCÍCIO 3 - dayjs
@@ -132,7 +132,7 @@ import Confetti from 'react-confetti'
 
             <div className="preview-area">
               {/* TODO: Renderize <Confetti /> aqui quando showConfetti for true */}
-              {showConfetti ? '🎉 Confetes deveriam estar aparecendo!' : 'Confetes vao aparecer aqui'}
+              {showConfetti && <Confetti width={window.innerWidth} height={window.innerHeight} />}
             </div>
           </div>
         </div>
